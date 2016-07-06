@@ -23,7 +23,7 @@
 #include <daw/daw_string.h>
 
 auto to_roman( size_t number ) {
-	return daw::string::String( number, 'I' )
+	return daw::String( number, 'I' )
 		.search_replace( "IIIII", "V" )
 		.search_replace( "IIII", "IV" )
 		.search_replace( "VV", "X" )
